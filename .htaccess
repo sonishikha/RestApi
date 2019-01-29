@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteRule ^([^/]+)/?$ index.php?entity=$1 [QSA,L]
+RewriteRule ^([^/]+)/([0-9a-zA-Z]+)$ index.php?entity=$1&searchKey=$2 [QSA,L]
+
+#RewriteEngine on
+#RewriteBase /example
+#RewriteCond %{SCRIPT_FILENAME} !-f
+#RewriteCond %{SCRIPT_FILENAME} !-d
+#RewriteRule ^([^/]+)/?$ index.php?dir=$1 [QSA,L]
