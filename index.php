@@ -3,14 +3,14 @@ ini_set("error_reporting", E_ALL);
 require_once('config/constants.php'); //Call constants
 
 require_once(CONFIG.'/authentication.php');
-/*$authenticate = new Authenticate();
-$authenticate->authentication();*/
-header("Access-Control-Allow-Origin: *");
+$authenticate = new Authenticate();
+$authenticate->authentication();
+
 header("Content-Type: application/json; charset=UTF-8");
 
 try{
 	$dirPath = getcwd();
-	require realpath($dirPath . DS . 'app.php'); 
+	require realpath($dirPath . DIRECTORY_SEPARATOR . 'app.php'); 
 	
 	$entity = $action = $entityId = $search = '';
 	
@@ -34,7 +34,7 @@ try{
 		}
 	}
 
-	$filePath = APP . 'Controllers' . DS . $entity . "Controller.php";
+	$filePath = APP . 'Controllers' . DIRECTORY_SEPARATOR . $entity . "Controller.php";
 	//checking if file exists
 	if (!file_exists($filePath)) {
 		throw new Exception('Entity not found.', ERROR_CODE['BAD_REQUEST']);
@@ -43,20 +43,21 @@ try{
 	require_once($filePath);
 	$obj = new $controllerClassName(); //Entity controller
 
+	//Perform action according to reques method
 	switch(filter_input(INPUT_SERVER, 'REQUEST_METHOD')){ 
 		case 'GET':{
-			$products_data = array();
+			$data = array();
 			if(!empty($entityId)){ // if id available get data by id
-				$products_data = $obj->getById($entityId);
+				$data = $obj->getById($entityId);
 			}elseif(!empty($search)){
-				$products_data[] = "Search by product";
+				$data[] = "Search by product";
 			}else{ //else get all the data
-				$products_data = $obj->getAll();
+				$data = $obj->getAll();
 			}
-			if(is_array($products_data)){ //Read Response 
-				print_r(App::showResponse(true, ERROR_CODE['OK'], $products_data ));
+			if(is_array($data)){ //Read Response 
+				echo App::showResponse(true, ERROR_CODE['OK'], $data );
 			}else{
-				throw new Exception("Cannot get data.", ERROR_CODE['INTERNAL_SERVER_ERROR']);	
+				throw new Exception("No data found.", ERROR_CODE['INTERNAL_SERVER_ERROR']);	
 			}
 			break;
 		}
@@ -85,33 +86,35 @@ try{
 									throw new Exception($key.' column cannot be null.', ERROR_CODE['BAD_REQUEST']);
 								}
 							}
-							$data[trim($key)] = App::filterData($value); //Filter data
+							$data[$key] = App::filterData($value); //Filter data
 						}
 					}
 				}
 				if($invalidColumnCount>0){
-					throw new Exception('Invalid columns:'.trim($invalidColumns, ',').'.', ERROR_CODE['BAD_REQUEST']);
+					throw new Exception('Invalid columns: '.trim($invalidColumns, ',').'.', ERROR_CODE['BAD_REQUEST']);
 				}
 			}
 			//Create Response
 			if($obj->createRecord($data)){
-				print_r(App::showResponse(true, ERROR_CODE['RESOURCE_CREATED'], 'Record inserted.'));
+				echo App::showResponse(true, ERROR_CODE['RESOURCE_CREATED'], 'Record inserted.');
 			}else{
 				throw new Exception('Record not created.', ERROR_CODE['INTERNAL_SERVER_ERROR']);	
 			}
 			break;
 		}
 		case 'PUT':{
-			header("Content-Type: application/x-www-form-urlencoded; charset=UTF-8");
+			header("Content-Type: multipart/form-data; charset=UTF-8");
 			$data = array();
 			parse_str(file_get_contents("php://input"), $putData);
+			if(empty($entityId)){ //check if valid entity id
+				throw new Exception('Id not available to update record.',ERROR_CODE['BAD_REQUEST']);
+			}
 			if(!isset($putData) || empty($putData)){ //Check if put data available
 				throw new Exception('Put data not available.', ERROR_CODE['BAD_REQUEST']);
 			}
-			if(!empty($entityId)){ //check if valid entity id
-				throw new Exception('Id not available to update record.',ERROR_CODE['BAD_REQUEST']);
-			}
-			$columns = $obj->getTableColumns($entity);//Get entity table columns to insert data properly to that columns 
+			
+			//Get entity table columns to insert data properly to that columns
+			$columns = $obj->getTableColumns($entity); 
 			if($columns){
 				$invalidColumns = '';
 				$invalidColumnCount = 0;
@@ -129,17 +132,17 @@ try{
 									throw new Exception($key.' column cannot be null.', ERROR_CODE['BAD_REQUEST']);
 								}
 							}
-							$data[trim($key)] = App::filterData($value);//Filter data
+							$data[$key] = App::filterData($value);//Filter data
 						}
 					}
 				}
 				if($invalidColumnCount>0){
-					throw new Exception('Invalid columns:'.trim($invalidColumns, ',').'.', ERROR_CODE['BAD_REQUEST']);
+					throw new Exception('Invalid columns: '.trim($invalidColumns, ',').'.', ERROR_CODE['BAD_REQUEST']);
 				}
 			}
 			//Update response
 			if($obj->updateById($entityId, $data)){
-				print_r(App::showResponse(true, ERROR_CODE['RESOURCE_CREATED'], 'Record updated.'));
+				echo App::showResponse(true, ERROR_CODE['RESOURCE_CREATED'], 'Record updated.');
 			}else{
 				throw new Exception('Record not updated.', ERROR_CODE['INTERNAL_SERVER_ERROR']);	
 			}
@@ -152,7 +155,7 @@ try{
 			}
 			//Delete response
 			if($obj->deleteById($entityId)){
-				print_r(App::showResponse(true, ERROR_CODE['OK'], 'Record delete.'));
+				echo App::showResponse(true, ERROR_CODE['OK'], 'Record delete.');
 			}else{
 				throw new Exception('Record not delete.', ERROR_CODE['INTERNAL_SERVER_ERROR']);	
 			}
@@ -164,6 +167,6 @@ try{
 		}
 	}	
 } catch (Exception $e){
-	print_r(App::showResponse(false, $e->getCode(), $e->getMessage()));
+	echo App::showResponse(false, $e->getCode(), $e->getMessage());
 }
 ?>

@@ -80,15 +80,15 @@ class Products extends DBConnect{
 
     /**
     * To read single record
-    * @var string $key
+    * @var string $column
     * @var string $value
     */
-    public function readRow($key, $value){
-        $query = "SELECT * FROM $this->table WHERE $key = :$key LIMIT 1";
+    public function readRow($column, $value){
+        $query = "SELECT * FROM $this->table WHERE $column = :$column LIMIT 1";
 
         $stmt = $this->conn->prepare($query);
 
-        $stmt->bindParam(":$key", $value);
+        $stmt->bindParam(":$column", $value);
 
         $stmt->execute();
         

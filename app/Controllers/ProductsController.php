@@ -38,9 +38,8 @@ class ProductsController extends Products{
                 array_push($products_arr["records"], $product_item);
             }
             return $products_arr;
-        }else{
-            throw new Exception('MySQL Error '.$stmt->errorCode().': '.$stmt->errorInfo()[2], ERROR_CODE['BAD_REQUEST']);
         }
+        return false;
     } 
 
 
@@ -68,9 +67,8 @@ class ProductsController extends Products{
                 array_push($products_arr["records"], $product_item);
             }
             return $products_arr;
-        }else{
-            throw new Exception('MySQL Error '.$stmt->errorCode().': '.$stmt->errorInfo()[2], ERROR_CODE['BAD_REQUEST']);
         }
+        return false;
     }
 
     /*
