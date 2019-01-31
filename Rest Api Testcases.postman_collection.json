@@ -1,0 +1,1377 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Rest Api Testcases",
+		"_postman_id": "0ce60b8c-cd16-c071-1b63-b1c3eb69208c",
+		"description": "Collection of all the different types of requests made. ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost/RestApi/1",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "admin",
+						"password": "admin",
+						"saveHelperData": false,
+						"showPassword": false
+					}
+				},
+				"url": "localhost/RestApi/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"name": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "LG",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/RestApi/product",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "admin",
+						"password": "admin",
+						"saveHelperData": false,
+						"showPassword": false
+					}
+				},
+				"url": "localhost/RestApi/product",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"name": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "LG",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/RestApi/products",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "admin",
+						"password": "admin",
+						"saveHelperData": false,
+						"showPassword": false
+					}
+				},
+				"url": "localhost/RestApi/products",
+				"method": "COPY",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"name": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "LG",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/RestApi/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "admin",
+						"password": "admin",
+						"saveHelperData": false,
+						"showPassword": false
+					}
+				},
+				"url": "localhost/RestApi/",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"name": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "LG",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/RestApi/products/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "admin",
+						"password": "admin",
+						"saveHelperData": false,
+						"showPassword": false
+					}
+				},
+				"url": "localhost/RestApi/products/",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"name": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "LG",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/RestApi/products/56",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "admin",
+						"password": "admin",
+						"saveHelperData": false,
+						"showPassword": false
+					}
+				},
+				"url": "localhost/RestApi/products/56",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"name": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "LG",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/RestApi/products/1",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "admin",
+						"password": "admin",
+						"saveHelperData": false,
+						"showPassword": false
+					}
+				},
+				"url": "localhost/RestApi/products/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"name": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name1",
+							"value": "LG",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/RestApi/products/1",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "admin",
+						"password": "admin",
+						"saveHelperData": false,
+						"showPassword": false
+					}
+				},
+				"url": "localhost/RestApi/products/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"name": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name1",
+							"value": "LG",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/RestApi/products/1",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "admin",
+						"password": "admin",
+						"saveHelperData": false,
+						"showPassword": false
+					}
+				},
+				"url": "localhost/RestApi/products/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"name": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name1",
+							"value": "LG",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/RestApi/products/1",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "admin",
+						"password": "admin",
+						"saveHelperData": false,
+						"showPassword": false
+					}
+				},
+				"url": "localhost/RestApi/products/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"name": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name1",
+							"value": "LG",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/RestApi/products/1",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "admin",
+						"password": "admin",
+						"saveHelperData": false,
+						"showPassword": false
+					}
+				},
+				"url": "localhost/RestApi/products/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"name": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "LG",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/RestApi/products/1",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "admin",
+						"password": "admin",
+						"saveHelperData": false,
+						"showPassword": false
+					}
+				},
+				"url": "localhost/RestApi/products/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"name": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/RestApi/products/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "admin",
+						"password": "admin",
+						"saveHelperData": false,
+						"showPassword": false
+					}
+				},
+				"url": "localhost/RestApi/products/",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"name": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/RestApi/products/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "admin",
+						"password": "admin",
+						"saveHelperData": false,
+						"showPassword": false
+					}
+				},
+				"url": "localhost/RestApi/products/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"name": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Iphone 7",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "sku",
+							"value": "Iphone7_3",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Iphone 7",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/RestApi/products/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "admin",
+						"password": "admin",
+						"saveHelperData": false,
+						"showPassword": false
+					}
+				},
+				"url": "localhost/RestApi/products/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"name": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Iphone 7",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "sku",
+							"value": "Iphone7_1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Iphone 7",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "0",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/RestApi/products/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "admin",
+						"password": "admin",
+						"saveHelperData": false,
+						"showPassword": false
+					}
+				},
+				"url": "localhost/RestApi/products/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"name": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Iphone 7",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "sku",
+							"value": "Iphone7_1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Iphone 7",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "0",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/RestApi/products/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "admin",
+						"password": "admin",
+						"saveHelperData": false,
+						"showPassword": false
+					}
+				},
+				"url": "localhost/RestApi/products/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"name": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "namew",
+							"value": "Iphone 7",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "skuw",
+							"value": "Iphone7_1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "descriptionw",
+							"value": "Iphone 7",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "pricew",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "quantityw",
+							"value": "0",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/RestApi/products/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "admin",
+						"password": "admin",
+						"saveHelperData": false,
+						"showPassword": false
+					}
+				},
+				"url": "localhost/RestApi/products/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"name": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "namew",
+							"value": "Iphone 7",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "skuw",
+							"value": "Iphone7_1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "descriptionw",
+							"value": "Iphone 7",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "pricew",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "0",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/RestApi/products/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "admin",
+						"password": "admin",
+						"saveHelperData": false,
+						"showPassword": false
+					}
+				},
+				"url": "localhost/RestApi/products/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"name": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "namew",
+							"value": "Iphone 7",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "skuw",
+							"value": "Iphone7_1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "descriptionw",
+							"value": "Iphone 7",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "0",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/RestApi/products/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "admin",
+						"password": "admin",
+						"saveHelperData": false,
+						"showPassword": false
+					}
+				},
+				"url": "localhost/RestApi/products/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"name": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "namew",
+							"value": "Iphone 7",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "skuw",
+							"value": "Iphone7_1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Iphone 7",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "0",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/RestApi/products/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "admin",
+						"password": "admin",
+						"saveHelperData": false,
+						"showPassword": false
+					}
+				},
+				"url": "localhost/RestApi/products/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"name": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "namew",
+							"value": "Iphone 7",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "sku",
+							"value": "Iphone7_1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Iphone 7",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "0",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/RestApi/products/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "admin",
+						"password": "admin",
+						"saveHelperData": false,
+						"showPassword": false
+					}
+				},
+				"url": "localhost/RestApi/products/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"name": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "shikha",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "sku",
+							"value": "shikha",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "shikha",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "tyyy",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "0",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/RestApi/products/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "admin",
+						"password": "admin1",
+						"saveHelperData": false,
+						"showPassword": false
+					}
+				},
+				"url": "localhost/RestApi/products/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"name": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4x",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "shikha",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "sku",
+							"value": "shikha",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "shikha",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "tyyy",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "0",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/RestApi/products/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "admin1",
+						"password": "admin",
+						"saveHelperData": false,
+						"showPassword": false
+					}
+				},
+				"url": "localhost/RestApi/products/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"name": "Authorization",
+						"value": "Basic YWRtaW4xOmFkbWlu",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "shikha",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "sku",
+							"value": "shikha",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "shikha",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "tyyy",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "0",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/RestApi/products/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "admin",
+						"password": "admin",
+						"saveHelperData": false,
+						"showPassword": false
+					}
+				},
+				"url": "localhost/RestApi/products/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"name": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "shikha",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "sku",
+							"value": "shikha",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "shikha",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "tyyy",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "0",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/RestApi/products/10",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "admin",
+						"password": "admin",
+						"saveHelperData": false,
+						"showPassword": false
+					}
+				},
+				"url": "localhost/RestApi/products/10",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"name": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "shikha",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "sku",
+							"value": "shikha",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "shikha",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "tyyy",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "0",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
