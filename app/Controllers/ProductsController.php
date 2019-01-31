@@ -81,7 +81,7 @@ class ProductsController extends Products{
         $this->description = $data['description'];
         $this->price = $data['price'];
         $this->quantity = $data['quantity'];
-        $this->created = date('Y-m-d H:i:s');
+        $this->created_at = date('Y-m-d H:i:s');
 
         $stmt = $this->create();
         // Execute query

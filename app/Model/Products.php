@@ -21,8 +21,7 @@ class Products extends DBConnect{
     public $description;
     public $price;
     public $quantity;
-    public $created; 
-    public $modified;
+    public $created_at; 
     
     /**
     * Get DB coneection instance 
@@ -50,7 +49,7 @@ class Products extends DBConnect{
             description = :description,
             price = :price,
             quantity = :quantity,
-            created = :created";
+            created_at= :created_at";
         
         $stmt = $this->conn->prepare($query);
         
@@ -60,7 +59,7 @@ class Products extends DBConnect{
         $stmt->bindParam(':description', $this->description);
         $stmt->bindParam(':price', $this->price);
         $stmt->bindParam(':quantity', $this->quantity);
-        $stmt->bindParam(':created', $this->created);
+        $stmt->bindParam(':created_at', $this->created_at);
 
         return $stmt;
     }
@@ -69,7 +68,7 @@ class Products extends DBConnect{
     * To read all the data
     */
     public function read(){
-        $query = "SELECT * FROM $this->table ORDER BY created DESC";
+        $query = "SELECT * FROM $this->table ORDER BY created_at DESC";
         
         $stmt = $this->conn->prepare($query);
 
