@@ -1,6 +1,6 @@
 <?php
 define('HOST', 'localhost');
-define('USERNAME', 'shikha');
-define('PASSWORD', 'shikha');
+define('USERNAME', 'restapi');
+define('PASSWORD', 'restapi');
 define('DATABASE', 'rest_api');
 ?>
